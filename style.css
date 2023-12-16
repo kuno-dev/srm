@@ -1,0 +1,68 @@
+:root {
+    --background: #fff; /* default background color */
+    --foreground: #333; /* default foreground color */
+    --highlight: #537668; /* hopefully your favorite color */
+}
+
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: background-color 0.5s, color 0.5s; /* animation for switching the mode */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+    padding-left: 5px;;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+header h1 span {
+    color: var(--highlight);
+    font-weight: 900;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header nav a {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--highlight);
+    text-decoration: underline;
+}
+
+footer {
+    padding-bottom: 2%;
+    font-size: 1.0em;
+    font-weight: 100;
+    padding-left: 3%;
+}
+
+footer ul {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+}
+
+footer .version {
+    color: var(--highlight);
+}
+
+footer .copyright {
+    color: var(--foreground);
+}
+
+footer .copyright span {
+    color: var(--highlight);
+    font-weight: 500;
+}

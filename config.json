@@ -1,0 +1,22 @@
+{
+    "name": "srm",
+    "desc": "Soccer Result Monitor",
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "release": 0,
+        "build": {
+            "month": 12,
+            "year": 2023,
+            "date": "12/16/2023"
+        }
+    },
+    "author": {
+        "name": "Kuno Jansen",
+        "email": "kuno-dev@pm.me",
+        "company": "Kuno-Jansen Development",
+        "web": "https://kuno-dev.github.io/",
+        "git": "https://github.com/kuno-dev/srm",
+        "gist": "https://gist.github.com/kuno-dev"
+    }
+}
