@@ -4,7 +4,15 @@
     --highlight: #537668; /* hopefully your favorite color */
 }
 
+.dark-mode {
+    --background: #333; /* darken background color */
+    --foreground: #fff; /* lighten foreground color */
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--background);
     color: var(--foreground);
     transition: background-color 0.5s, color 0.5s; /* animation for switching the mode */
@@ -13,9 +21,25 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.dark-mode {
-    --background: #333; /* darken background color */
-    --foreground: #fff; /* lighten foreground color */
+main {
+    flex-grow: 1; /* got aviable space for content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    background: none;
+    color: var(--foreground);
+    border-color: var(--highlight);
+    border-style: solid;
+    border-radius: 15px;
+
+}
+
+button:hover {
+    color: var(--highlight);
 }
 
 header h1 {
@@ -32,7 +56,7 @@ header h1 span {
 header nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -46,17 +70,40 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+#resultContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 150px; /* Passe die Breite nach Bedarf an */
+    border: 1px solid var(--highlight);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px;
+    background-color: var(--background);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--foreground);
+}
+
+.card h2 {
+    font-size: 1.2em; /* Passe die Schriftgröße nach Bedarf an */
+    color: var(--highlight);
+}
+
+.card p {
+    font-size: 0.9em; /* Passe die Schriftgröße nach Bedarf an */
+}
+
+
+
 footer {
     padding-bottom: 2%;
     font-size: 1.0em;
     font-weight: 100;
     padding-left: 3%;
-}
-
-footer ul {
-    display: flex;
-    gap: 1em;
-    list-style-type: none;
+    margin-top: auto;
 }
 
 footer .version {

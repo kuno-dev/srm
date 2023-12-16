@@ -18,5 +18,11 @@
         "web": "https://kuno-dev.github.io/",
         "git": "https://github.com/kuno-dev/srm",
         "gist": "https://gist.github.com/kuno-dev"
+    },
+    "api": {
+        "method": "GET",
+        "request": "2020-21/de.1.clubs.json",
+        "url": "https://raw.githubusercontent.com/openfootball/football.json/master/",
+        "token": ""
     }
 }

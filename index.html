@@ -5,31 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>SRM | Soccer Result Monitor</title>
+    <title id="pageTitle">Application Name</title>
 </head>
 <body>
     <header>
-        <h1>SRM <span>Soccer Result Monitor</span></h1>
+        <h1 id="appName">APP <span id="appDesc">Description</span></h1>
         <nav>
-            <a href="#">About</a>
+            <button onclick="fetchData()">Fetch Data</button>
             <a href="mailto:kuno-dev@pm.me">Contact</a>
             <button onclick="toggleMode()">Toggle Mode</button>
         </nav>
     </header>
     <main>
-        <!-- put content later -->
+        <div id="resultContainer">
+            <!-- Content will be added dynamically -->
+        </div>
     </main>
     <footer>
-        <ul>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
+        <p id="footerAbout">About</p>
         <section>
-            <div class="version">SRM | Soccer Result Monitor - Version 1.0.0</div>
-            <div class="copyright">&copy;2023 <span>Kuno Jansen Development</span></div>
+            <div id="footerVersion" class="version">Version</div>
+            <div id="footerCopyright" class="copyright">Copyright</div>
         </section>
     </footer>
     <script src="./app.js"></script>
